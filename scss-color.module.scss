@@ -1,0 +1,6 @@
+@import "scss-color";
+
+:export{
+  themeColor:$theme-color;
+  cloneThemeColor:$clone-theme-color;
+}
