@@ -3,6 +3,10 @@
 $theme-color:red;
 $clone-theme-color:blue;
 
+@function getpx ($px) {
+  @return $px + 'px'
+}
+
 // 自定义滚动条样式  不展示滚动条
 @mixin none-scrollbar {
   &::-webkit-scrollbar-track {
