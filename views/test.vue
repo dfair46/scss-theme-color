@@ -7,7 +7,7 @@
 </script>
 
 <style lang="scss">
-@import '../../scss-color.scss';
+@import '../scss-color.scss';
 
 .theme-color {
   color: var(--theme-color)
