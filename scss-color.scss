@@ -1,0 +1,36 @@
+@charset "UTF-8";
+// 主题色
+$theme-color:red;
+$clone-theme-color:blue;
+
+// 自定义滚动条样式  不展示滚动条
+@mixin none-scrollbar {
+  &::-webkit-scrollbar-track {
+    display: none;
+  }
+  &::-webkit-scrollbar-thumb {
+    display: none;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+// 最多显示多少行后省略号显示
+@mixin overflow-ellipsis($lineNum) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lineNum;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// 逆时针旋转 动画
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg); /* 逆时针旋转 360 度 */
+  }
+}
