@@ -9,6 +9,6 @@
 @import './scss-color.scss';
 
 :root {
-  --suancai-theme-color: $theme-color;
+  --theme-color: $theme-color;
 }
 </style>
